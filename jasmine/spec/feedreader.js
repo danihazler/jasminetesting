@@ -64,7 +64,7 @@ $(function() {
 
     it("there is at least a single .entry element within the .feed container", function(){
       expect($(".feed .entry").length).toBeGreaterThan(0);
-    });  
+    });
   });
 
 
@@ -83,10 +83,10 @@ $(function() {
           done();
         });
       });
+    });
 
-      it("Feeds are not equal", function(){
-        expect(firstFeed).not.toEqual(secondFeed);
-      });
+    it("Feeds are not equal", function(){
+      expect(firstFeed).not.toEqual(secondFeed);
     });
   });
 
